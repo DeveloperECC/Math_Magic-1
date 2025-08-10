@@ -69,21 +69,19 @@ body {
 }
 
 .tarjeta-suma {
-  background: none;
   position: relative;
   overflow: hidden;
+  max-width: 250px; /* límite de ancho */
+  aspect-ratio: 1 / 1; /* mantiene proporción cuadrada */
   border-radius: var(--radio);
-  width: 100%;
-  max-width: 200px; /* límite de ancho para que no crezca demasiado */
-  height: 200px; /* altura fija de la tarjeta */
 }
 
 .tarjeta-suma video {
   position: absolute;
   top: 0;
   left: 0;
-  width: 10%;
-  height: 10%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   z-index: 0;
 }
@@ -95,7 +93,7 @@ body {
   padding: 12px;
   text-align: center;
 }
-
+    
 .contenedor-principal {
   flex: 1;
   padding: 16px;
