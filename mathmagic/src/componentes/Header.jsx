@@ -5,7 +5,7 @@ export default function Encabezado() {
   return (
     <header className="encabezado">
       {/* Título principal con efecto mágico */}
-      <h1>✨ MathMagic ✨</h1>
+      <h1> <img src="public/apple-touch-icon.png" alt="" />✨ MathMagic ✨</h1>
       <p>Aprende matemáticas con trucos, juegos y magia</p>
     </header>
   )
