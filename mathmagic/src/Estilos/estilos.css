@@ -6,7 +6,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: white; /* Mejor contraste */
+  color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@ body {
 }
 
 .encabezado h1:hover {
-  color: #863bff; /* amarillo brillante */
+  color: #863bff;
   transform: scale(1.1);
 }
 
@@ -54,20 +54,18 @@ body {
   border-radius: var(--radio);
   padding: 16px;
   min-width: 160px;
+  min-height: 200px;
   cursor: pointer;
   border: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .tarjeta-juego:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-}
-.tarjeta-suma {
-  background: none; /* Quitamos la imagen estática */
-  position: relative;
-  overflow: hidden;
 }
 
 .tarjeta-suma video {
@@ -85,8 +83,8 @@ body {
   z-index: 1;
   color: white;
   padding: 12px;
+  text-align: center;
 }
-
 
 .contenedor-principal {
   flex: 1;
@@ -94,26 +92,25 @@ body {
 }
 
 .form-row {
-  display:flex;
-  gap:8px;
-  margin-bottom:8px;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
 }
 
 .acciones {
-  display:flex;
-  gap:8px;
-  margin-top:8px;
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
 }
 
 .resultado {
-  margin-top:12px;
-  font-weight:bold;
+  margin-top: 12px;
+  font-weight: bold;
 }
 
 .pie-pagina {
-  padding:12px;
-  text-align:center;
+  padding: 12px;
+  text-align: center;
   background: rgba(0,0,0,0.4);
   color: white;
-  justify-content: end;
 }
