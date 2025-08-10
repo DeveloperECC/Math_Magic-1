@@ -1,14 +1,14 @@
 // App principal — organiza la navegación simple entre módulos
 import React, { useState } from 'react'
-import Encabezado from './componentes/Encabezado'
-import PiePagina from './componentes/PiePagina'
-import TarjetaJuego from './componentes/TarjetaJuego'
+import Encabezado from './componentes/Header'
+import PiePagina from './componentes/Footer'
+import TarjetaJuego from './componentes/Juego'
 
 // Importar páginas (componentes de cada módulo)
-import SumaMagica from './paginas/SumaMagica'
-import RestaMagica from './paginas/RestaMagica'
-import MultiplicacionMagica from './paginas/MultiplicacionMagica'
-import DivisionMagica from './paginas/DivisionMagica'
+import SumaMagica from './paginas/Sumamagica'
+import RestaMagica from './paginas/Restamagica'
+import MultiplicacionMagica from './paginas/Multiplicacionmagica'
+import DivisionMagica from './paginas/Divisionmagica'
 import Logica from './paginas/Logica'
 import Razonamiento from './paginas/Razonamiento'
 import Inicio from './paginas/Inicio'
