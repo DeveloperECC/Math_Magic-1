@@ -9,32 +9,33 @@ body {
   flex-direction: column;
 }
 
-.encabezado {
-  padding: 16px;
-  text-align: center;
-  background: rgba(255,255,255,0.12);
-}
 .encabezado h1 {
   display: flex;
-  align-items: center; /* Alinea verticalmente la imagen y el texto */
-  gap: 10px; /* Espacio entre el ícono y el texto */
-  font-size: 2rem; /* Ajusta tamaño del texto */
-  font-weight: bold;
-  color: #ffcc00; /* Color llamativo para niños */
-  text-shadow: 2px 2px #ff6600;
+  align-items: center;
+  font-size: 2rem;
+  color: #4a148c; /* morado intenso */
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  padding-left: 20px;
+  justify-content: center;
 }
 
 .encabezado h1 img {
-  width: 40px; /* Tamaño reducido del ícono */
-  height: 40px;
+  height: 50px;
+  width: 50px;
   object-fit: contain;
+  transition: all 0.3s ease;
 }
 
-.encabezado p {
-  font-size: 1.2rem;
-  color: #fff;
+.encabezado h1:hover {
+  color: #ff9800; /* naranja vibrante */
+  transform: scale(1.1);
 }
 
+.encabezado h1:hover img {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 5px gold);
+}
 .menu-principal {
   display: flex;
   flex-wrap: wrap;
