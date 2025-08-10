@@ -68,12 +68,22 @@ body {
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
+.tarjeta-suma {
+  background: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radio);
+  width: 100%;
+  max-width: 200px; /* límite de ancho para que no crezca demasiado */
+  height: 200px; /* altura fija de la tarjeta */
+}
+
 .tarjeta-suma video {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 10%;
+  height: 10%;
   object-fit: cover;
   z-index: 0;
 }
