@@ -1,24 +1,27 @@
-/* Estilos globales amigables para niños */
 body {
   margin: 0;
   font-family: 'Comic Sans MS', 'Arial', sans-serif;
-  background: linear-gradient(180deg, var(--color-principal), #3aa14a);
-  color: var(--texto-oscuro);
+  background-color: var(--color-principal);
+  background-image: url(./src/assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white; /* Mejor contraste */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url(./src/assets/background.png);
 }
 
 .encabezado h1 {
   display: flex;
   align-items: center;
-  font-size: 2rem;
-  color: #4a148c; /* morado intenso */
+  font-size: 2.5rem;
+  color: #fff;
   gap: 0.5rem;
   transition: all 0.3s ease;
   padding-left: 20px;
   justify-content: center;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
 .encabezado h1 img {
@@ -29,29 +32,37 @@ body {
 }
 
 .encabezado h1:hover {
-  color: #ff9800; /* naranja vibrante */
+  color: #ffeb3b; /* amarillo brillante */
   transform: scale(1.1);
 }
 
 .encabezado h1:hover img {
   transform: scale(1.2);
-  filter: drop-shadow(0 0 5px gold);
+  filter: drop-shadow(0 0 8px gold);
 }
+
 .menu-principal {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  justify-items: center;
+  padding: 20px;
 }
 
 .tarjeta-juego {
-  background: white;
+  background: white url(./src/assets/card-bg.png) no-repeat center/cover;
   border-radius: var(--radio);
-  padding: 12px;
-  min-width: 120px;
+  padding: 16px;
+  min-width: 160px;
   cursor: pointer;
   border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-juego:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 .contenedor-principal {
@@ -65,8 +76,20 @@ body {
   margin-bottom:8px;
 }
 
-.acciones { display:flex; gap:8px; margin-top:8px }
+.acciones {
+  display:flex;
+  gap:8px;
+  margin-top:8px;
+}
 
-.resultado { margin-top:12px; font-weight:bold }
+.resultado {
+  margin-top:12px;
+  font-weight:bold;
+}
 
-.pie-pagina { padding:12px; text-align:center; background: rgba(0,0,0,0.06) }
+.pie-pagina {
+  padding:12px;
+  text-align:center;
+  background: rgba(0,0,0,0.4);
+  color: white;
+}
