@@ -32,7 +32,7 @@ body {
 }
 
 .encabezado h1:hover {
-  color: #ffeb3b; /* amarillo brillante */
+  color: #863bff; /* amarillo brillante */
   transform: scale(1.1);
 }
 
@@ -92,4 +92,5 @@ body {
   text-align:center;
   background: rgba(0,0,0,0.4);
   color: white;
+  justify-content: end;
 }
