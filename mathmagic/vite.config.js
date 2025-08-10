@@ -22,6 +22,7 @@ export default defineConfig({
     })
   ],
   server: {
-    open: true
+    ort: 5174,
+    open: true // Cambio el puerto para evitar conflictos
   }
 })
