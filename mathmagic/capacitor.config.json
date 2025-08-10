@@ -1,5 +1,6 @@
 {
   "appId": "com.elmer.mathmagic",
   "appName": "MathMagic",
-  "webDir": "dist"
+  "webDir": "dist",
+  "bundledWebRuntime": false
 }

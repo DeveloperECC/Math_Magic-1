@@ -1,0 +1,50 @@
+/* Estilos globales amigables para niños */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif;
+  background: linear-gradient(180deg, var(--color-principal), #3aa14a);
+  color: var(--texto-oscuro);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.encabezado {
+  padding: 16px;
+  text-align: center;
+  background: rgba(255,255,255,0.12);
+}
+
+.menu-principal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 12px;
+}
+
+.tarjeta-juego {
+  background: white;
+  border-radius: var(--radio);
+  padding: 12px;
+  min-width: 120px;
+  cursor: pointer;
+  border: none;
+}
+
+.contenedor-principal {
+  flex: 1;
+  padding: 16px;
+}
+
+.form-row {
+  display:flex;
+  gap:8px;
+  margin-bottom:8px;
+}
+
+.acciones { display:flex; gap:8px; margin-top:8px }
+
+.resultado { margin-top:12px; font-weight:bold }
+
+.pie-pagina { padding:12px; text-align:center; background: rgba(0,0,0,0.06) }

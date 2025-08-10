@@ -1,0 +1,7 @@
+:root {
+  /* Variables para colores y tipografías */
+  --color-principal: #4CAF50;
+  --color-secundario: #FFC107;
+  --texto-oscuro: #222;
+  --radio: 12px;
+}
